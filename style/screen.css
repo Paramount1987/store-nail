@@ -471,7 +471,8 @@ header { position: relative; font-size: 16px; font-family: "Cuprum", "PT Sans", 
 
 .user-online-text:after { content: ""; z-index: -1; position: absolute; top: 0; left: 0; width: 100%; min-width: 1000px; height: 45px; background: #f5f6fa; }
 
-.link-exit { display: inline-block; line-height: 17px; margin-left: 15px; }
+.link-exit { display: inline-block; position: relative; line-height: 17px; margin-left: 15px; }
+.link-exit:before { content: ""; position: absolute; top: 2px; left: -10px; height: 15px; width: 1px; background: #24A1A5; }
 
 .user-order { position: relative; border: 3px solid #BCE5E9; border-radius: 3px; padding: 20px 3px 15px 75px; font-family: Arial, sans-serif; font-size: 14px; }
 
@@ -980,13 +981,11 @@ h3 { font-size: 24px; text-transform: uppercase; color: #555764; font-weight: no
 
 .review-author { text-align: right; color: #4B123B; font-weight: bold; }
 
-.banner-phone { position: relative; z-index: 12; height: 70px; font-family: "Cuprum", sans-serif; margin-bottom: 15px; }
+.banner-phone { position: relative; z-index: 12; height: 70px; font-family: "Cuprum", sans-serif; margin-bottom: 20px; }
 
-.banner-phone-inner { position: absolute; top: 0; left: 0; width: 990px; border: 5px solid #24A1A5; border-radius: 14px; background: #fff; }
+.banner-phone-inner { border: 5px solid #24A1A5; border-radius: 14px; background: #fff; }
 
-.banner-left { position: relative; color: #24A1A5; display: inline-block; width: 42%; vertical-align: top; font-size: 24px; padding-top: 3px; text-align: center; background: #fff; border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+.banner-left { position: relative; color: #24A1A5; display: inline-block; width: 53%; vertical-align: top; font-size: 24px; padding-top: 3px; padding-right: 20px; text-align: right; background: #fff; border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
 .banner-left:after { content: "i"; position: absolute; top: 6px; left: 15px; width: 42px; height: 42px; border: 5px solid #24A1A5; border-radius: 42px; color: #24A1A5; text-align: center; line-height: 32px; font-size: 28px; font-weight: bold; }
 
-.banner-right { display: inline-block; width: 57%; vertical-align: top; float: right; background: #24A1A5; border-top-left-radius: 8px; border-bottom-left-radius: 8px; color: #fff; font-size: 28px; font-weight: bold; text-align: center; }
-
-.banner-phone-inner .b-phone-2 { display: inline-block; margin-left: 30px; }
+.banner-right { display: inline-block; width: 46%; vertical-align: top; float: right; background: #24A1A5; border-top-left-radius: 8px; border-bottom-left-radius: 8px; color: #fff; font-size: 28px; font-weight: bold; text-align: center; }
